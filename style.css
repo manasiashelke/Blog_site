@@ -1,0 +1,418 @@
+body {
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*===== margin: top, right, bottom, left;==== */
+
+
+/*============ Navbar start ===========*/
+
+.nav_bar {
+    background-color: rgb(142, 20, 223);
+    border: 2px solid rgb(24, 24, 71);
+    display: flex;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px black;
+    background-image: linear-gradient(to right bottom, rgb(61, 111, 228), rgb(0, 140, 255), rgb(0, 255, 242));
+    margin-bottom: 5px;
+}
+
+.club_name {
+    align-items: center;
+    padding: 15px 20px 15px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 8px 8px 5px black;
+}
+
+.nav_bar .nav_list {
+    margin: 0 20px 0 14rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: left;
+    /* align-items: right; */
+    list-style: none;
+}
+
+.nav_item {
+    padding: 25px 0px 2px 5px;
+    height: 10px;
+    font-size: 21px;
+}
+
+.nav_link {
+    width: 160px;
+    text-decoration: none;
+    padding: 0px;
+    box-sizing: border-box;
+    color: black;
+    float: right;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.nav_link:hover {
+    color: #d3d2d2;
+}
+
+.fas {
+    overflow: hidden;
+    width: 28px;
+    height: 20px;
+    animation: rotate 1s infinite ease-in-out;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(20deg);
+    }
+    50% {
+        transform: rotate(-20deg);
+    }
+    75% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+        font-size: 22px;
+    }
+}
+
+
+/*============ Navbar End ===========*/
+
+
+/*============ sticky button ===========*/
+
+.stickyIcon {
+    text-align: center;
+}
+
+.stickyIcon i {
+    position: fixed;
+    top: 70%;
+    color: rgb(8, 8, 8);
+    font-size: 50px;
+    background-image: linear-gradient(to bottom right, rgb(199, 2, 45), rgb(216, 4, 135), rgb(134, 1, 211), rgb(8, 103, 212));
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    box-shadow: 2px 2px 5px black;
+    padding: 8px 8px 8px 8px;
+    margin: 5px 5px 5px 5px;
+    animation: shake 1s infinite ease-out;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(30deg);
+    }
+    50% {
+        transform: rotate(-30deg);
+    }
+    75% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+        /* font-size: 25px; */
+    }
+}
+
+.stickyIcon i:hover {
+    font-size: 55px;
+    color: #f2f2f2;
+}
+
+
+/*============ sticky button ===========*/
+
+
+/* =============Welcome page start ============ */
+
+.welcome {
+    width: 100%;
+    height: 47rem;
+    /* border: 2px solid rgb(249, 248, 252); */
+    background-color: rgb(118, 137, 223);
+    padding-top: 20px;
+    font-weight: bolder;
+    background-image: url("https://wallup.net/wp-content/uploads/2015/12/87620-space-space_station-artificial_gravity-fantasy_art-digital_art-astronaut-spacesuit-landscape-clouds-nature-lake-forest-stars-futuristic-tunnel-wormholes.jpg");
+    background-repeat: no-repeat;
+    opacity: 1;
+    /* height: 40rem; */
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 5px 10px 0 black;
+    /* text-shadow: 5px 5px 8px ; */
+}
+
+.welcome h1 {
+    text-align: center;
+    font-size: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #f2f2f2;
+}
+
+.welcome .welcome_button {
+    width: 310px;
+    height: 50px;
+    margin: 100px 40rem 10px;
+    font-size: 20px;
+    color: rgb(242, 242, 248);
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 25px;
+    background-image: linear-gradient(to right bottom, rgb(34, 34, 39), rgb(79, 78, 80));
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.welcome .welcome_button:hover {
+    font-size: 22px;
+}
+
+
+/* ==========Welcome page end============= */
+
+
+/* ===========Blog section start============ */
+
+.blog_section {
+    margin: 0px;
+    padding: 5px;
+    /* background-color: rgb(237, 245, 248);
+    border: 2px solid rgb(158, 144, 144); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    /* font-family: 'Bakbak One', cursive; */
+    /* text-shadow:2px 2px 3px rgb(56, 54, 56), 0 0 20px rgb(71, 65, 67), 0 0 8px rgb(59, 55, 58); */
+}
+
+.box {
+    width: 1500px;
+    height: 300px;
+    background-color: whitesmoke;
+    /* border: 2px solid rgb(73, 37, 37); */
+    /* border-radius: 10px; */
+    margin: 10px 15px 15px 15px;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0.2), 0 6px 18px 0 rgb(0, 0, 0, 0.19);
+}
+
+h3 {
+    font-size: 40px;
+    font-family: 'Balsamiq Sans', cursive;
+    text-align: center;
+    /* text-shadow: 5px 5px 5px rgb(61, 60, 60); */
+}
+
+p {
+    font-size: 20px;
+    font-family: 'Changa One', cursive;
+    text-align: left;
+    padding: 0px 9px 0px 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.blog_button {
+    width: 200px;
+    padding: 5px;
+    height: 50px;
+    border: 2px solid rgb(41, 35, 35);
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Balsamiq Sans', cursive;
+    background-image: linear-gradient(to right bottom, rgb(62, 185, 62), rgb(149, 214, 149));
+    box-shadow: 5px 10px 18px #1a191988;
+    margin-left: 25rem;
+    cursor: pointer;
+}
+
+.blog_button:hover {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.blog_button::selection {
+    color: blue;
+}
+
+img {
+    height: 285px;
+    width: 470px;
+    /* padding: 10px; */
+    margin: 5px 10px 5px 5px;
+    border-top-left-radius: 90px;
+    border-bottom-right-radius: 50px;
+    /* border: 2px solid black; */
+    float: right;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0.2), 0 6px 18px 0 rgb(0, 0, 0, 0.19);
+}
+
+
+/* =========Blog section end========== */
+
+
+/* ============form start==========*/
+
+fieldset {
+    background-color: #f2f2f2;
+    /* background-image: linear-gradient(to right bottom, rgb(75, 72, 72),rgb(106, 106, 110), rgb(164, 161, 167)); */
+}
+
+.form {
+    display: flex;
+    margin: 7px 7px 8px 38rem;
+    height: 550px;
+}
+
+input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 10px;
+    width: 350px;
+    height: 37px;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 5px 10px 18px #57555588;
+    font-family: 'Ubuntu', sans-serif;
+    /* box-shadow:0 4px 8px 0 rgb(0, 0, 0.2), 0 6px 18px 0 rgb(0, 0, 0, 0.19); */
+    /* box-shadow: 2px 5px 15px rgb(122, 119, 119) inset; */
+}
+
+textarea {
+    margin: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 10px 18px #57555588;
+    font-family: 'Ubuntu', sans-serif;
+    /* box-shadow:0 4px 8px 0 rgb(0, 0, 0.2), 0 6px 18px 0 rgb(0, 0, 0, 0.19); */
+}
+
+input[type=submit] {
+    background-image: linear-gradient(to right bottom, rgb(43, 41, 41), rgb(68, 64, 65), rgb(91, 87, 92));
+    width: 370px;
+    height: 40px;
+    cursor: pointer;
+    box-shadow: 5px 10px 18px #57555588;
+    font-family: 'Bakbak One', cursive;
+    color: #f2f2f2;
+    /* box-shadow:0 4px 8px 0 rgb(0, 0, 0.2), 0 6px 18px 0 rgb(0, 0, 0, 0.19); */
+}
+
+input[type=submit]:hover {
+    background-color: rgb(50, 185, 50);
+    font-size: 21px;
+}
+
+
+/* ========form end ========== */
+
+
+/* ===========footer start========== */
+
+footer {
+    margin: 5px;
+    width: 100%;
+    height: 14rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-image: linear-gradient(to right bottom, rgb(24, 23, 23), rgb(46, 42, 42), rgb(79, 78, 80));
+}
+
+#contact {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info {
+    height: 70px;
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+    text-align: center;
+    color: #f2f2f2;
+    margin: auto;
+}
+
+.info p {
+    padding: 0;
+    margin: 0;
+    font-size: larger;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.footer_icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+.footer_icon i {
+    color: #f2f2f2;
+    align-items: center;
+    padding: 5px;
+    margin: 5px 10px 0px 5px;
+    display: flex;
+    flex-direction: row;
+    font-size: 40px;
+    text-decoration: none;
+    animation: footer_rotate 1s infinite ease-in-out;
+}
+
+.footer_icon::selection {
+    color: blue;
+}
+
+@keyframes footer_rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(20deg);
+    }
+    50% {
+        transform: rotate(-20deg);
+    }
+    75% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.thankYou {
+    margin: 1rem 0 0 0;
+    font-size: 30px;
+    font-family: 'Bakbak One', cursive;
+    color: #f2f2f2;
+}
