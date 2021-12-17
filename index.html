@@ -1,25 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+style.css">
     <script src="https://kit.fontawesome.com/f11795d792.js" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;700&family=Open+Sans:wght@300&display=swap');
     </style>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Document</title>
+
 </head>
 
 <body>
 
-
+    <!-------------------------- Navbar -------------------------->
     <div class="nav_bar">
-        <div class="club_name">
-            <font size="10" color="white">Astronomy Club</font>
-        </div>
+
+        <label class="club_name">Astronomy Club</label>
         <div class="nav_list">
             <ul class="nav_list">
                 <li class="nav_item">
@@ -44,16 +39,19 @@
                 </li>
 
             </ul>
+
         </div>
 
     </div>
 
+    <!-------------------------- welcome page -------------------------->
 
-    <div id="Welcome" class="welcome">
-        <h1>Welcome to Astronomy Club</h1>
-        <button class="welcome_button">Join Now</button>
+    <div id="Welcome" class="welcome_page">
+        <h1 data-aos="fade-in" class="welcome_name">Welcome to Astronomy Club</h1>
+        <button data-aos="fade-in" class="welcome_button">Join Now</button>
     </div>
 
+    <!---------- stickyicon ---------->
 
     <span>
         <a href="https://instagram.com/gcoen_astronomy._club?utm_medium=copy_link" target="_blank" class="stickyIcon">
@@ -65,55 +63,61 @@
 
 
 
+    <!--------------------------  blog section ------------------------ -->
+
     <div>
-        <h2>Blog section</h2>
+        <h2 data-aos="fade-in" class="section_name">Blog section</h2>
     </div>
 
     <div id="blogSection" class="blog_section">
 
-        <div class="box">
-            <img src="https://th.bing.com/th/id/OIP.SG5U9c2sZC90FrsTU-fpJwHaFX?w=272&h=197&c=7&r=0&o=5&dpr=1.13&pid=1.7" alt="">
+        <div class="section_box" data-aos="fade-in">
+            <img class="blog_img" src="https://th.bing.com/th/id/OIP.SG5U9c2sZC90FrsTU-fpJwHaFX?w=272&h=197&c=7&r=0&o=5&dpr=1.13&pid=1.7" alt="">
             <h3 class="blog_topic">Solar system</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deleniti laborum quisquam hic unde sint doloremque voluptates veniam, similique incidunt!orem ipsum dolor sit amet consectetur adipisicing elit.
+            <p class="blog_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deleniti laborum quisquam hic unde sint doloremque voluptates veniam, similique incidunt!orem ipsum dolor sit amet consectetur adipisicing elit.
 
             </p>
             <button class="blog_button">Read more</button>
         </div>
 
-        <div class="box">
+        <div class="section_box" data-aos="fade-in">
 
-            <img src="https://th.bing.com/th/id/OIP.xlKuFITku9vWX23srDdx2gHaEK?w=287&h=180&c=7&r=0&o=5&dpr=1.13&pid=1.7" alt="">
+            <img class="blog_img" src="https://th.bing.com/th/id/OIP.xlKuFITku9vWX23srDdx2gHaEK?w=287&h=180&c=7&r=0&o=5&dpr=1.13&pid=1.7" alt="">
             <h3 class="blog_topic">Moon</h3>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deleniti laborum quisquam hic unde sint doloremque voluptates veniam, similique incidunt!orem ipsum dolor sit amet consectetur adipisicing elit.
+            <p class="blog_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deleniti laborum quisquam hic unde sint doloremque voluptates veniam, similique incidunt!orem ipsum dolor sit amet consectetur adipisicing elit.
 
             </p>
             <button class="blog_button">Read more</button>
         </div>
 
-        <div class="box">
-            <img src="https://th.bing.com/th/id/OIP.8PuKh5rD5kPYBGI7EjAykAHaFb?w=253&h=186&c=7&r=0&o=5&dpr=1.13&pid=1.7" alt="">
+        <div class="section_box" data-aos="fade-in">
+            <img class="blog_img" src="https://th.bing.com/th/id/OIP.8PuKh5rD5kPYBGI7EjAykAHaFb?w=253&h=186&c=7&r=0&o=5&dpr=1.13&pid=1.7" alt="">
             <h3 class="blog_topic">Galaxy</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deleniti laborum quisquam hic unde sint doloremque voluptates veniam, similique incidunt!orem ipsum dolor sit amet consectetur adipisicing elit.
+            <p class="blog_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deleniti laborum quisquam hic unde sint doloremque voluptates veniam, similique incidunt!orem ipsum dolor sit amet consectetur adipisicing elit.
 
             </p>
             <button class="blog_button">Read more</button>
         </div>
 
-        <div class="box">
-            <img src="https://th.bing.com/th/id/OIP.ijM3-prK9RLxaoYT7eUbaQHaE8?w=230&h=180&c=7&r=0&o=5&dpr=1.13&pid=1.7" alt="">
+        <div class="section_box" data-aos="fade-in">
+            <img class="blog_img" src="https://th.bing.com/th/id/OIP.ijM3-prK9RLxaoYT7eUbaQHaE8?w=230&h=180&c=7&r=0&o=5&dpr=1.13&pid=1.7" alt="">
             <h3 class="blog_topic">sun</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deleniti laborum quisquam hic unde sint doloremque voluptates veniam, similique incidunt! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <p class="blog_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deleniti laborum quisquam hic unde sint doloremque voluptates veniam, similique incidunt! Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
             </p>
             <button class="blog_button">Read more</button>
         </div>
     </div>
 
-    <div id="form">
-        <h2>Feedback form</h2>
 
-        <form class="form" action="https://formsubmit.co/sangitashelke507@gmail.com" method="POST">
+
+    <!------------------------- feedackform  ------------------------->
+
+    <div id="form">
+        <h2 class="form_name" data-aos="fade-in">Feedback form</h2>
+
+        <form class="form" data-aos="fade-in" action="https://formsubmit.co/sangitashelke507@gmail.com" method="POST">
             <fieldset>
                 <input type="text" name="firstName" placeholder="FirstName" required>
                 <input type="text" name="lastName" placeholder="LastName" required>
@@ -128,6 +132,8 @@
         </form>
     </div>
 
+
+    <!---------------------------- contact -------------------------->
     <footer>
         <div id="contact" class="">
             <div class="info">
@@ -147,6 +153,17 @@
             <div class="thankYou">Thank you</div>
         </div>
     </footer>
+
+    <!---------- aos data for animation scroll --------->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 230,
+            duration: 800,
+        });
+    </script>
+
+
 </body>
 
 </html>
