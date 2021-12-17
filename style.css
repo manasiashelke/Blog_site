@@ -420,4 +420,426 @@ body {
         font-size: 30px;
         font-family: 'Bakbak One', cursive;
         color: #f2f2f2;
+    }body {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    /*===== margin: top, right, bottom, left;==== */
+    /*============================ Navbar start ===========================*/
+    
+    .nav_bar {
+        border: 2px solid rgb(24, 24, 71);
+        display: flex;
+        box-shadow: 2px 2px 5px black;
+        background-image: linear-gradient(to right bottom, rgb(61, 111, 228), rgb(0, 140, 255), rgb(0, 255, 242));
+        margin-bottom: 0px;
+    }
+    
+    .club_name {
+        padding: 15px 20px 15px;
+        font-size: 40px;
+        color: rgb(242, 242, 248);
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+        text-shadow: 8px 8px 5px black;
+        word-wrap: none;
+    }
+    
+    .nav_bar .nav_list {
+        margin: 0 20px 0 14rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: left;
+        list-style: none;
+    }
+    
+    .nav_item {
+        padding: 25px 0px 2px 5px;
+        height: 10px;
+        font-size: 21px;
+    }
+    
+    .nav_link {
+        width: 160px;
+        text-decoration: none;
+        padding: 0px;
+        box-sizing: border-box;
+        color: black;
+        float: right;
+        font-family: 'Balsamiq Sans', cursive;
+    }
+    
+    .nav_link:hover {
+        color: #d3d2d2;
+    }
+    
+    .fas {
+        overflow: hidden;
+        width: 28px;
+        height: 20px;
+        animation: rotate 1s infinite ease-in-out;
+    }
+    
+    @keyframes rotate {
+        0% {
+            transform: rotate(0deg);
+        }
+        25% {
+            transform: rotate(20deg);
+        }
+        50% {
+            transform: rotate(-20deg);
+        }
+        75% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(0deg);
+            font-size: 22px;
+        }
+    }
+    /*============================ Navbar End ===========================*/
+    /*============================ sticky button ===========================*/
+    
+    .stickyIcon {
+        text-align: center;
+    }
+    
+    .stickyIcon i {
+        position: fixed;
+        top: 70%;
+        color: rgb(8, 8, 8);
+        font-size: 55px;
+        background-image: linear-gradient(to bottom right, rgb(199, 2, 45), rgb(216, 4, 135), rgb(134, 1, 211), rgb(8, 103, 212));
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 20px;
+        box-shadow: 2px 2px 5px black;
+        padding: 8px 8px 8px 8px;
+        margin: 5px 5px 5px 5px;
+        animation: shake 0.8s infinite ease-out;
+    }
+    
+    @keyframes shake {
+        0% {
+            transform: rotate(0deg);
+        }
+        25% {
+            transform: rotate(30deg);
+        }
+        50% {
+            transform: rotate(0deg);
+        }
+        75% {
+            transform: rotate(-30deg);
+        }
+        100% {
+            transform: rotate(0deg);
+            font-size: 60px;
+        }
+    }
+    
+    .stickyIcon i:hover {
+        font-size: 55px;
+        color: #f2f2f2;
+    }
+    /*============ sticky button ===========*/
+    /* =============Welcome page start ============ */
+    
+    .welcome_page {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+        height: 47rem;
+        background-color: rgb(118, 137, 223);
+        font-weight: bolder;
+        background-image: url("https://wallup.net/wp-content/uploads/2015/12/87620-space-space_station-artificial_gravity-fantasy_art-digital_art-astronaut-spacesuit-landscape-clouds-nature-lake-forest-stars-futuristic-tunnel-wormholes.jpg");
+        background-repeat: no-repeat;
+        opacity: 1;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 5px 10px 0 black;
+    }
+    
+    .welcome_page h1 {
+        text-align: center;
+        font-size: 60px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: #f2f2f2;
+        margin-top: 100px;
+    }
+    
+    .welcome_page .welcome_button {
+        width: 310px;
+        height: 50px;
+        margin-top: 50px;
+        font-size: 20px;
+        color: rgb(242, 242, 248);
+        font-family: 'Baloo Bhaijaan 2', cursive;
+        font-size: 25px;
+        background-image: linear-gradient(to right bottom, rgb(34, 34, 39), rgb(79, 78, 80));
+        cursor: pointer;
+        border-radius: 8px;
+    }
+    
+    .welcome_page .welcome_button:hover {
+        font-size: 27px;
+    }
+    /* @media (max-width: 775px) {
+        .welcome_page {
+            height: 37rem;
+        }
+        .welcome_page .welcome_button {
+            width: 200px;
+            height: 40px;
+        }
+    } */
+    /* ==========Welcome page end============= */
+    /* ===================Blog section start==================== */
+    
+    .blog_section {
+        width: auto;
+        margin: 0px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .section_name {
+        text-align: center;
+        font-size: 50px;
+        font-family: 'Baloo Bhaijaan 2', cursive;
+        /* font-family: 'Bakbak One', cursive; */
+        /* text-shadow:2px 2px 3px rgb(56, 54, 56), 0 0 20px rgb(71, 65, 67), 0 0 8px rgb(59, 55, 58); */
+    }
+    
+    .section_box {
+        width: 1450px;
+        height: 300px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        margin: 10px 0px 15px 0px;
+        box-shadow: 0 4px 8px 0 rgb(0, 0, 0.2), 0 6px 18px 0 rgb(0, 0, 0, 0.19);
+    }
+    
+    .blog_topic {
+        font-size: 40px;
+        font-family: 'Balsamiq Sans', cursive;
+        text-align: center;
+        text-shadow: 2px 2px 10px rgb(61, 60, 60);
+    }
+    
+    .blog_p {
+        font-size: 20px;
+        font-family: 'Changa One', cursive;
+        text-align: left;
+        padding: 0px 9px 0px 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .blog_button {
+        width: 200px;
+        padding: 5px;
+        margin-left: 25rem;
+        height: 50px;
+        border: 2px solid rgb(41, 35, 35);
+        border-radius: 5px;
+        font-size: 20px;
+        font-family: 'Balsamiq Sans', cursive;
+        background-image: linear-gradient(to right bottom, rgb(62, 185, 62), rgb(149, 214, 149));
+        box-shadow: 5px 10px 18px #1a191988;
+        cursor: pointer;
+    }
+    
+    .blog_button:hover {
+        font-weight: bold;
+        font-size: 22px;
+    }
+    
+    .blog_button::selection {
+        color: blue;
+    }
+    
+    .blog_img {
+        height: 285px;
+        width: 470px;
+        margin: 5px 10px 5px 5px;
+        border-top-left-radius: 90px;
+        border-bottom-right-radius: 50px;
+        float: right;
+        box-shadow: 0 4px 8px 0 rgb(0, 0, 0.2), 0 6px 18px 0 rgb(0, 0, 0, 0.19);
+    }
+    /* @media (max-width: 775px) {
+        .section_name {
+            font-size: 40px;
+        }
+        .blog_p {
+            padding: 0px 5px 0px 0px;
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+        .section_box {
+            width: 500px;
+            height: 700px;
+            margin: 8px 0px 10px 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .blog_button {
+            width: 200px;
+            padding: 2px;
+            margin-left: 8rem;
+            height: 45px;
+        }
+        .blog_img {
+            height: 200px;
+            width: 300px;
+            margin: 5px 10px 5px 5px;
+        }
+    } */
+    /* =========================Blog section end========================== */
+    /* ============================  form start  ==========================*/
+    
+    fieldset {
+        background-color: #f2f2f2;
+    }
+    
+    .form_name {
+        text-align: center;
+        font-size: 50px;
+        font-family: 'Baloo Bhaijaan 2', cursive;
+    }
+    
+    .form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 550px;
+    }
+    
+    input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 10px 10px 10px;
+        padding: 5px 5px 5px 10px;
+        width: 350px;
+        height: 37px;
+        font-size: 18px;
+        border-radius: 5px;
+        box-shadow: 5px 10px 15px #57555588;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
+    textarea {
+        margin: 10px 10px 10px 10px;
+        padding: 5px 5px 5px 10px;
+        font-size: 20px;
+        border-radius: 5px;
+        box-shadow: 5px 10px 15px #57555588;
+        font-family: 'Ubuntu', sans-serif;
+        /* box-shadow: 0 4px 8px 0 rgb(0, 0, 0.2), 0 6px 18px 0 rgb(0, 0, 0, 0.19); */
+    }
+    
+    input[type=submit] {
+        background-image: linear-gradient(to right bottom, rgb(43, 41, 41), rgb(68, 64, 65), rgb(91, 87, 92));
+        width: 370px;
+        height: 40px;
+        cursor: pointer;
+        box-shadow: 5px 10px 18px #57555588;
+        font-family: 'Bakbak One', cursive;
+        color: #f2f2f2;
+        /* box-shadow:0 4px 8px 0 rgb(0, 0, 0.2), 0 6px 18px 0 rgb(0, 0, 0, 0.19); */
+    }
+    
+    input[type=submit]:hover {
+        font-size: 21px;
+    }
+    /* ========form end ========== */
+    /* ===========footer start========== */
+    
+    footer {
+        width: auto;
+        height: 14rem;
+        background-image: linear-gradient(to right bottom, rgb(24, 23, 23), rgb(46, 42, 42), rgb(79, 78, 80));
+    }
+    
+    #contact {
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .info {
+        height: 38px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: #f2f2f2;
+        margin: auto;
+    }
+    
+    .info p {
+        padding: 0;
+        margin: 0;
+        font-size: larger;
+        font-family: 'Balsamiq Sans', cursive;
+    }
+    
+    .footer_icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: #f2f2f2;
+        text-decoration: none;
+    }
+    
+    .footer_icon i {
+        color: #f2f2f2;
+        align-items: center;
+        padding: 15px;
+        margin: 40px 0px 0px 0px;
+        display: flex;
+        flex-direction: row;
+        font-size: 40px;
+        text-decoration: none;
+        animation: footer_rotate 1s infinite ease-in-out;
+    }
+    
+    @keyframes footer_rotate {
+        0% {
+            transform: rotate(0deg);
+        }
+        25% {
+            transform: rotate(20deg);
+        }
+        50% {
+            transform: rotate(-20deg);
+        }
+        75% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+    
+    .thankYou {
+        margin: 15px 0 0 0;
+        font-size: 30px;
+        font-family: 'Bakbak One', cursive;
+        color: #f2f2f2;
     }
