@@ -843,3 +843,56 @@ body {
         font-family: 'Bakbak One', cursive;
         color: #f2f2f2;
     }
+
+
+
+
+
+   /**==============   Modification by Naresh   ==============*/
+
+ 
+
+
+
+   /*======   removing contents for mobile view   =======*/
+   @media screen and (max-width:1000px) {
+    
+    .nav_list {
+        display: none;
+    }
+    .nav_item {
+        display: none;
+    }
+ 
+ }
+
+
+ /*=======   Adding horizontal lines menu for mobile view   =======*/
+ @media screen and (max-width:1000px) {
+       
+    .bar {
+     
+        Height:3px;
+        Width:40px;
+        Background-color:#ffffff;
+        Margin:10px 10px;
+        
+       }    
+      
+    .bar_container { 
+        display: block;
+       
+        float: right;
+        height: fit-content;
+        margin-top: 40%;
+    }   
+
+   
+
+    .club_name {
+        background-color: green;
+    }
+
+ }
+
+
