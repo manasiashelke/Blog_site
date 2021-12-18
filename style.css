@@ -35,6 +35,7 @@ body {
         justify-content: space-evenly;
         align-content: left;
         list-style: none;
+
     }
     
     .nav_item {
@@ -401,13 +402,13 @@ body {
 
     @media (max-width:1270px){
         .nav_bar .nav_list{
-    margin: 0 10px 0 13%;
+    margin: 0 10px 0 13%;  
 }
     } 
     
     @media (max-width:1140px){
         .nav_bar .nav_list{
-    margin: 0 10px 0 7%;
+    margin: 0 10px 0 7%;  
 }
 .stickyIcon i{
     font-size: 40px;
@@ -418,7 +419,7 @@ body {
 
     @media (max-width:1060px){
         .nav_bar .nav_list{
-            margin: 0 10px 0 3%;
+            margin: 0 5% 0 45%; 
 }
 .welcome_page h1{
     font-size: 6vw;
@@ -553,11 +554,9 @@ body {
 
 
    /*======   removing contents for mobile view   =======*/
-   @media screen and (max-width:1000px) {
+   @media (max-width:1060px){
     
-    .nav_list {
-        display: none;
-    }
+   
     .nav_item {
         display: none;
     }
@@ -566,10 +565,13 @@ body {
 
 
  /*=======   Adding horizontal lines menu for mobile view   =======*/
- @media screen and (max-width:1000px) {
+ @media (max-width:1060px){
+
+    .nav_bar .nav_list{
+        margin: 0 5% 0 35%; 
+}
        
     .bar {
-     
         Height:3px;
         Width:40px;
         Background-color:#ffffff;
@@ -579,17 +581,43 @@ body {
       
     .bar_container { 
         display: block;
-       
         float: right;
         height: fit-content;
-        margin-top: 40%;
+        
+        
+      
     }   
-
    
 
     .club_name {
-        background-color: green;
+        
+        font-size: 4.5vw;
     }
+
+
+
+    .drop-cont {
+        Padding:60px 95px;
+          top:55px;
+          Float:Left;
+          Position:Absolute;
+          Right:10px;
+          display: none;
+          Background-color:grey;
+          Font-size:25px;
+          Color:#000000;
+          Z-index:1;
+          box-shadow:30px 30px 35px 0px rgba(0,0,0,100.0);
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius:26px;
+          width: 100px;
+    }
+
+    .dropdown:hover .drop-cont{
+        display: block;
+    }
+
 
  }
 
