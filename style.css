@@ -394,6 +394,11 @@ body {
         color: #f2f2f2;
     }
 
+    
+    .drop-cont {
+        display: none;
+    }      
+
 
 
 
@@ -404,6 +409,7 @@ body {
         .nav_bar .nav_list{
     margin: 0 10px 0 13%;  
 }
+
     } 
     
     @media (max-width:1140px){
