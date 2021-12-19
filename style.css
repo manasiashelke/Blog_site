@@ -1,630 +1,720 @@
 body {
-        margin: 0px;
-        padding: 0px;
-    }
-    
-    html {
-        scroll-behavior: smooth;
-    }
-    /*===== margin: top, right, bottom, left;==== */
-    /*============================ Navbar start ===========================*/
-    
-    .nav_bar {
-        border: 2px solid rgb(24, 24, 71);
-        display: flex;
-        box-shadow: 2px 2px 5px black;
-        background-image: linear-gradient(to right bottom, rgb(61, 111, 228), rgb(0, 140, 255), rgb(0, 255, 242));
-        margin-bottom: 0px;
-    }
-    
-    .club_name {
-        padding: 10px 15px 15px 15px;
-        margin: 0px;
-        font-size: 2.5vw;
-        color: rgb(242, 242, 248);
-        font-weight: bold;
-        font-family: 'Times New Roman', Times, serif;
-        text-shadow: 8px 8px 5px black;
-        word-wrap: none;
-    }
-    
-    .nav_bar .nav_list {
-        margin: 0 20px 0 20%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-content: left;
-        list-style: none;
-
-    }
-    
-    .nav_item {
-        padding: 25px 0px 2px 5px;
-        height: 10px;
-        font-size: 1.3vw;
-    }
-    
-    .nav_link {
-        width: 160px;
-        text-decoration: none;
-        padding: 0px;
-        box-sizing: border-box;
-        color: black;
-        float: right;
-        font-family: 'Balsamiq Sans', cursive;
-    }
-    
-    .nav_link:hover {
-        color: #d3d2d2;
-    }
-    
-    .fas {
-        overflow: hidden;
-        width: 28px;
-        height: 20px;
-        animation: rotate 1s infinite ease-in-out;
-    }
-    
-    @keyframes rotate {
-        0% {
-            transform: rotate(0deg);
-        }
-        25% {
-            transform: rotate(20deg);
-        }
-        50% {
-            transform: rotate(-20deg);
-        }
-        75% {
-            transform: rotate(0deg);
-        }
-        100% {
-            transform: rotate(0deg);
-            font-size: 22px;
-        }
-    }
-    /*============================ Navbar End ===========================*/
-    /*============================ sticky button ===========================*/
-    
-    .stickyIcon {
-        text-align: center;
-    }
-    
-    .stickyIcon i {
-        position: fixed;
-        top: 70%;
-        color: rgb(8, 8, 8);
-        font-size:50px;
-        background-image: linear-gradient(to bottom right, rgb(199, 2, 45), rgb(216, 4, 135), rgb(134, 1, 211), rgb(8, 103, 212));
-        border-bottom-right-radius: 20px;
-        border-top-left-radius: 20px;
-        box-shadow: 2px 2px 5px black;
-        padding: 8px 8px 8px 8px;
-        margin: 5px 5px 5px 5px;
-        animation: shake 0.8s infinite ease-out;
-    }
-    
-    @keyframes shake {
-        0% {
-            transform: rotate(0deg);
-        }
-        25% {
-            transform: rotate(30deg);
-        }
-        50% {
-            transform: rotate(0deg);
-        }
-        75% {
-            transform: rotate(-30deg);
-        }
-        100% {
-            transform: rotate(0deg);
-            /* font-size: 1.5rem; */
-        }
-    }
-    
-    .stickyIcon i:hover {
-        font-size: 55px;
-        color: #f2f2f2;
-    }
-    /*============ sticky button ===========*/
-    /* =============Welcome page start ============ */
-    
-    .welcome_page {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        margin: 0px;
-        padding: 0px;
-        height: 47rem;
-        background-color: rgb(118, 137, 223);
-        font-weight: bolder;
-        background-image: url("https://wallup.net/wp-content/uploads/2015/12/87620-space-space_station-artificial_gravity-fantasy_art-digital_art-astronaut-spacesuit-landscape-clouds-nature-lake-forest-stars-futuristic-tunnel-wormholes.jpg");
-        background-repeat: no-repeat;
-        opacity: 1;
-        background-position: center;
-        background-size: cover;
-        box-shadow: 0 5px 10px 0 black;
-    }
-    
-    .welcome_page h1 {
-        text-align: center;
-        font-size: 4.2vw;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color: #f2f2f2;
-        margin-top: 100px;
-    }
-    
-    .welcome_page .welcome_button {
-        width: 16vw;
-        height: 2.8vw;
-        margin-top: 50px;
-        font-size: 1.5vw;
-        color: rgb(242, 242, 248);
-        font-family: 'Baloo Bhaijaan 2', cursive;
-       
-        background-image: linear-gradient(to right bottom, rgb(34, 34, 39), rgb(79, 78, 80));
-        cursor: pointer;
-        border-radius: 8px;
-    }
-    
-    .welcome_page .welcome_button:hover {
-        font-size: 27px;
-    }
-    
-    /* ==========Welcome page end============= */
-    /* ===================Blog section start==================== */
-    
-    .blog_section {
-        width: auto;
-        margin: 0px;
-        padding: 5px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .section_name {
-        text-align: center;
-        font-size: 3.5vw;
-       
-        font-family: 'Bakbak One', cursive;
-        /* text-shadow:2px 2px 3px rgb(56, 54, 56), 0 0 20px rgb(71, 65, 67), 0 0 8px rgb(59, 55, 58); */
-    }
-    
-    .section_box {
-    
-        width: 90%;
-        height:20vw;
-        background-color: whitesmoke;
-        border-radius: 10px;
-        margin: auto;
-        margin: 10px 0px 15px 0px;
-        box-shadow: 0 4px 8px 0 rgb(0, 0, 0.2), 0 6px 18px 0 rgb(0, 0, 0, 0.19);
-    }
-    
-    .blog_topic {
-        font-size: 2.8vw;
-        font-family: 'Balsamiq Sans', cursive;
-        text-align: center;
-       
-    }
-    
-    .blog_p {
-        font-size: 1.2vw;
-        font-family: 'Changa One', cursive;
-        text-align: center;
-        padding: 0px 10px 0px 10px;
-      
-    }
-    
-    .blog_section .section_box .blog_button {
-        width: 16%;
-        padding: 5px;
-       height: 2.8vw;
-        margin: auto;
-        border-radius: 5px;
-        font-size: 1.2vw;
-        display: block;
-        align-items: center;
-        align-self: center;
-        font-family: 'Balsamiq Sans', cursive;
-        background-image: linear-gradient(to right bottom, rgb(62, 185, 62), rgb(149, 214, 149));
-        box-shadow: 5px 10px 18px #1a191988;
-        cursor: pointer;
-    }
-    
-    .blog_button:hover {
-        font-weight: bold;
-        font-size: 22px;
-    }
-    
-    .blog_button::selection {
-        color: blue;
-    }
-    
-    .blog_img {
-        height: 94%;
-        width: 34%;
-        margin: 5px 10px 5px 5px;
-        border-top-left-radius: 90px;
-        border-bottom-right-radius: 50px;
-        float: right;
-        box-shadow: 0 4px 8px 0 rgb(0, 0, 0.2), 0 6px 18px 0 rgb(0, 0, 0, 0.19);
-    }
-    
-   
-    /* =========================Blog section end========================== */
-    /* ============================  form start  ==========================*/
-    
-    fieldset {
-        background-color: #f2f2f2;
-    }
-    
-    .form_name {
-        text-align: center;
-        font-size: 4.1vw;
-        font-family: 'Baloo Bhaijaan 2', cursive;
-    }
-    
-    .form {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 550px;
-    }
-    
-    input {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 10px 10px 10px 10px;
-        padding: 5px 5px 5px 10px;
-        width: 350px;
-        height: 37px;
-        font-size: 18px;
-        border-radius: 5px;
-        box-shadow: 5px 10px 15px #57555588;
-        font-family: 'Ubuntu', sans-serif;
-    }
-    
-    textarea {
-        margin: 10px 10px 10px 10px;
-        padding: 5px 5px 5px 10px;
-        font-size: 20px;
-        border-radius: 5px;
-        box-shadow: 5px 10px 15px #57555588;
-        font-family: 'Ubuntu', sans-serif;
-        /* box-shadow: 0 4px 8px 0 rgb(0, 0, 0.2), 0 6px 18px 0 rgb(0, 0, 0, 0.19); */
-    }
-    
-    input[type=submit] {
-        background-image: linear-gradient(to right bottom, rgb(43, 41, 41), rgb(68, 64, 65), rgb(91, 87, 92));
-        width: 370px;
-        height: 40px;
-        
-        font-size: 20px;
-        cursor: pointer;
-        box-shadow: 5px 10px 18px #57555588;
-        font-family: 'Bakbak One', cursive;
-        color: #f2f2f2;
-        /* box-shadow:0 4px 8px 0 rgb(0, 0, 0.2), 0 6px 18px 0 rgb(0, 0, 0, 0.19); */
-    }
-    
-    input[type=submit]:hover {
-        font-size: 21px;
-    }
-    /* ========form end ========== */
-    /* ===========footer start========== */
-    
-    footer {
-        width: auto;
-        height: 60%;
-        background-image: linear-gradient(to right bottom, rgb(24, 23, 23), rgb(46, 42, 42), rgb(79, 78, 80));
-    }
-    
-    #contact {
-        padding-top: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    
-    .info {
-       
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        color: #f2f2f2;
-        margin: auto;
-    }
-    
-    .info p {
-        padding: 0;
-        margin: 0;
-        font-size: 1.3vw;
-        font-family: 'Balsamiq Sans', cursive;
-    }
-    
-    .footer_icon {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        color: #f2f2f2;
-        text-decoration: none;
-    }
-    
-    .footer_icon i {
-        color: #f2f2f2;
-        align-items: center;
-        padding:1.2rem 1rem 1.2rem 1rem ;
-        margin: auto;
-        display: flex;
-        flex-direction: row;
-        font-size: 2.4vw;
-        text-decoration: none;
-        animation: footer_rotate 1s infinite ease-in-out;
-    }
-    
-    @keyframes footer_rotate {
-        0% {
-            transform: rotate(0deg);
-        }
-        25% {
-            transform: rotate(20deg);
-        }
-        50% {
-            transform: rotate(-20deg);
-        }
-        75% {
-            transform: rotate(0deg);
-        }
-        100% {
-            transform: rotate(0deg);
-        }
-    }
-    
-    .thankYou {
-        margin: auto;
-        padding:0 0 14px 0 ;
-        font-size: 1.6vw;
-        font-family: 'Bakbak One', cursive;
-        color: #f2f2f2;
-    }
-
-    
-    .drop-cont {
-        display: none;
-    }      
-
-
-
-
-
-    /*============================ media query=============================== */
-
-    @media (max-width:1270px){
-        .nav_bar .nav_list{
-    margin: 0 10px 0 13%;  
+    margin: 0px;
+    padding: 0px;
 }
 
-    } 
-    
-    @media (max-width:1140px){
-        .nav_bar .nav_list{
-    margin: 0 10px 0 7%;  
+html {
+    scroll-behavior: smooth;
 }
-.stickyIcon i{
-    font-size: 40px;
-    border-bottom-right-radius: 15px;
-    border-top-left-radius: 15px;
-}
-    } 
 
-    @media (max-width:1060px){
-        .nav_bar .nav_list{
-            margin: 0 5% 0 45%; 
-}
-.welcome_page h1{
-    font-size: 6vw;
-}
-.welcome_page .welcome_button {
-    width: 20vw;
-    height: 4vw;
-    margin-top: 50px;
-    font-size: 2vw;
-}
-    }
 
-   
+/*===== margin: top, right, bottom, left;==== */
 
-    /* =================================== media query for mobile ================================ */
-    @media (max-width:980px){
 
-        /*============= navbar ===============*/
-        /* .nav_bar .nav_list{
-           toggle
-} */
+/*============================ Navbar start ===========================*/
 
-.nav_item{
-    font-size: 1.5vw;
-    padding: 15px 0px 1px 3px;
+.nav_bar {
+    border: 2px solid rgb(24, 24, 71);
+    display: flex;
+    box-shadow: 2px 2px 5px black;
+    background-image: linear-gradient(to right bottom, rgb(61, 111, 228), rgb(0, 140, 255), rgb(0, 255, 242));
+    margin-bottom: 0px;
 }
-.club_name{
+
+.club_name {
+    padding: 10px 15px 15px 15px;
+    margin: 0px;
     font-size: 2.5vw;
+    color: rgb(242, 242, 248);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 8px 8px 5px black;
+    word-wrap: none;
 }
 
-/* ===============welcome page ===============*/
-.welcome_page h1{
-    font-size: 6vw;
+.nav_bar .nav_list {
+    margin: 0 20px 0 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: left;
+    list-style: none;
 }
+
+.nav_item {
+    padding: 21px 0px 0px 0px;
+    height: 10px;
+    font-size: 1.3vw;
+}
+
+.nav_link {
+    width: 160px;
+    text-decoration: none;
+    padding: 0px;
+    box-sizing: border-box;
+    color: black;
+    float: right;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.nav_link:hover {
+    color: #d3d2d2;
+}
+
+.fas {
+    overflow: hidden;
+    width: 28px;
+    height: 20px;
+    animation: rotate 1s infinite ease-in-out;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(20deg);
+    }
+    50% {
+        transform: rotate(-20deg);
+    }
+    75% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+        /* font-size: 22px; */
+    }
+}
+
+
+/*============================ Navbar End ===========================*/
+
+
+/*============================ sticky button ===========================*/
+
+.stickyIcon {
+    text-align: center;
+}
+
+.stickyIcon i {
+    position: fixed;
+    top: 70%;
+    color: rgb(8, 8, 8);
+    font-size: 50px;
+    background-image: linear-gradient(to bottom right, rgb(199, 2, 45), rgb(216, 4, 135), rgb(134, 1, 211), rgb(8, 103, 212));
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    box-shadow: 2px 2px 5px black;
+    padding: 8px 8px 8px 8px;
+    margin: 5px 5px 5px 5px;
+    animation: shake 0.8s infinite ease-out;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(30deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+        /* font-size: 1.5rem; */
+    }
+}
+
+.stickyIcon i:hover {
+    font-size: 55px;
+    color: #f2f2f2;
+}
+
+
+/*============ sticky button ===========*/
+
+
+/* =============Welcome page start ============ */
+
+.welcome_page {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    height: 47rem;
+    background-color: rgb(118, 137, 223);
+    font-weight: bolder;
+    background-image: url("https://wallup.net/wp-content/uploads/2015/12/87620-space-space_station-artificial_gravity-fantasy_art-digital_art-astronaut-spacesuit-landscape-clouds-nature-lake-forest-stars-futuristic-tunnel-wormholes.jpg");
+    background-repeat: no-repeat;
+    opacity: 1;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 5px 10px 0 black;
+}
+
+.welcome_page h1 {
+    text-align: center;
+    font-size: 4.2vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #f2f2f2;
+    margin-top: 100px;
+}
+
 .welcome_page .welcome_button {
-    width: 20vw;
-    height: 4vw;
+    width: 16vw;
+    height: 2.8vw;
     margin-top: 50px;
-    font-size: 2vw;
+    font-size: 1.5vw;
+    color: rgb(242, 242, 248);
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    background-image: linear-gradient(to right bottom, rgb(34, 34, 39), rgb(79, 78, 80));
+    cursor: pointer;
+    border-radius: 8px;
 }
 
-/*=============== blog section ===============*/
-.section_box {
-    margin: 15px 0 10px 0;
-    width: 90%;
-    height: 550px;
+.welcome_page .welcome_button:hover {
+    font-size: 27px;
+}
+
+
+/* ==========Welcome page end============= */
+
+
+/* ===================Blog section start==================== */
+
+.blog_section {
+    width: auto;
+    margin: 0px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.section_name{
-    font-size: 4vw;
-}
-.blog_section .section_box .blog_button {
-    width: 180px;
-    padding: 2px;
-   
-  font-size: 2vw;
-    height: 43px;
-}
-.blog_img {
-    height: 250px;
-    width: 350px;
-    margin: 5px 10px 5px 5px;
-}
-.blog_topic{
-    font-size: 3.3vw;
-}
 
-.blog_p{
-    font-size: 2vw;
-}
-
-
-/*=============== footer ===============*/
-.info p{
-    font-size: 1.9vw;
-}
-.footer_icon i{
+.section_name {
+    text-align: center;
     font-size: 3.5vw;
-}
-.thankYou{
-    font-size: 2.5vw;
+    font-family: 'Bakbak One', cursive;
 }
 
-    }
-/* =================media query for normal devices ================== */
-    @media (max-width: 775px) {
-        
-        .section_box {
-            margin: 15px 0 10px 0;
-            width: 90%;
-            height: 450px;
-           
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        .blog_topic{
-            font-size: 2.9vw;
-        }
-
-        .blog_p{
-            font-size: 2vw;
-        }
-        .blog_section .section_box .blog_button {
-            width: 200px;
-            padding: 2px;
-            display: block;
-            align-items: center;
-            align-self: center;
-          font-size: 2vw;
-            height: 45px;
-        }
-        .blog_img {
-            height: 200px;
-            width: 300px;
-            margin: 5px 10px 5px 5px;
-        }
-    }
-
-
-
-
-
-   /**==============   Modification by Naresh   ==============*/
-
- 
-
-
-
-   /*======   removing contents for mobile view   =======*/
-   @media (max-width:1060px){
-    
-   
-    .nav_item {
-        display: none;
-    }
- 
- }
-
-
- /*=======   Adding horizontal lines menu for mobile view   =======*/
- @media (max-width:1060px){
-
-    .nav_bar .nav_list{
-        margin: 0 5% 0 35%; 
+.section_box {
+    width: 90%;
+    height: 20vw;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin: auto;
+    margin: 10px 0px 15px 0px;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0.2), 0 6px 18px 0 rgb(0, 0, 0, 0.19);
 }
-       
+
+.blog_topic {
+    font-size: 2.8vw;
+    font-family: 'Balsamiq Sans', cursive;
+    text-align: center;
+}
+
+.blog_p {
+    font-size: 1.2vw;
+    font-family: 'Changa One', cursive;
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+}
+
+.blog_section .section_box .blog_button {
+    width: 16%;
+    padding: 5px;
+    height: 2.8vw;
+    margin: auto;
+    border-radius: 5px;
+    font-size: 1.2vw;
+    display: block;
+    align-items: center;
+    align-self: center;
+    font-family: 'Balsamiq Sans', cursive;
+    background-image: linear-gradient(to right bottom, rgb(62, 185, 62), rgb(149, 214, 149));
+    box-shadow: 5px 10px 18px #1a191988;
+    cursor: pointer;
+}
+
+.blog_button:hover {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.blog_button::selection {
+    color: blue;
+}
+
+.blog_img {
+    height: 94%;
+    width: 34%;
+    margin: 5px 10px 5px 5px;
+    border-top-left-radius: 90px;
+    border-bottom-right-radius: 50px;
+    float: right;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0.2), 0 6px 18px 0 rgb(0, 0, 0, 0.19);
+}
+
+
+/* =========================Blog section end========================== */
+
+
+/* ============================  form start  ==========================*/
+
+fieldset {
+    background-color: #f2f2f2;
+}
+
+.form_name {
+    text-align: center;
+    font-size: 4.1vw;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 550px;
+}
+
+input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 10px;
+    width: 350px;
+    height: 37px;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 5px 10px 15px #57555588;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+textarea {
+    margin: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 10px 15px #57555588;
+    font-family: 'Ubuntu', sans-serif;
+    /* box-shadow: 0 4px 8px 0 rgb(0, 0, 0.2), 0 6px 18px 0 rgb(0, 0, 0, 0.19); */
+}
+
+input[type=submit] {
+    background-image: linear-gradient(to right bottom, rgb(43, 41, 41), rgb(68, 64, 65), rgb(91, 87, 92));
+    width: 370px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 5px 10px 18px #57555588;
+    font-family: 'Bakbak One', cursive;
+    color: #f2f2f2;
+    /* box-shadow:0 4px 8px 0 rgb(0, 0, 0.2), 0 6px 18px 0 rgb(0, 0, 0, 0.19); */
+}
+
+input[type=submit]:hover {
+    font-size: 21px;
+}
+
+
+/* ========form end ========== */
+
+
+/* ===========footer start========== */
+
+footer {
+    width: auto;
+    height: 60%;
+    background-image: linear-gradient(to right bottom, rgb(24, 23, 23), rgb(46, 42, 42), rgb(79, 78, 80));
+}
+
+#contact {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #f2f2f2;
+    margin: auto;
+}
+
+.info p {
+    padding: 0;
+    margin: 0;
+    font-size: 1.3vw;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.footer_icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+.footer_icon i {
+    color: #f2f2f2;
+    align-items: center;
+    padding: 1.2rem 1rem 1.2rem 1rem;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    font-size: 2.4vw;
+    text-decoration: none;
+    animation: footer_rotate 1s infinite ease-in-out;
+}
+
+@keyframes footer_rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(20deg);
+    }
+    50% {
+        transform: rotate(-20deg);
+    }
+    75% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.thankYou {
+    margin: auto;
+    padding: 0 0 14px 0;
+    font-size: 1.6vw;
+    font-family: 'Bakbak One', cursive;
+    color: #f2f2f2;
+}
+
+.drop-cont {
+    display: none;
+}
+
+
+/*============================ media query=============================== */
+
+@media (max-width:1280px) {
+    .nav_bar .nav_list {
+        margin: 0 10px 0 13%;
+    }
+}
+
+@media (max-width:1140px) {
+    .nav_bar .nav_list {
+        margin: 0 10px 0 7%;
+    }
+    .stickyIcon i {
+        font-size: 40px;
+        border-bottom-right-radius: 15px;
+        border-top-left-radius: 15px;
+    }
+}
+
+@media (max-width:1060px) {
+    .welcome_page h1 {
+        font-size: 6vw;
+    }
+    .welcome_page .welcome_button {
+        width: 20vw;
+        height: 4vw;
+        margin-top: 50px;
+        font-size: 2vw;
+    }
+}
+
+
+/*=======   Adding horizontal lines menu for mobile view   =======*/
+
+@media (max-width:1060px) {
+    .nav_bar .nav_list {
+        margin: 0 4% 0 42%;
+    }
     .bar {
-        Height:3px;
-        Width:40px;
-        Background-color:#ffffff;
-        Margin:10px 10px;
-        
-       }    
-      
-    .bar_container { 
+        Height: 3px;
+        Width: 40px;
+        Background-color: #ffffff;
+        Margin: 8px 8px;
+    }
+    .bar_container {
         display: block;
         float: right;
         height: fit-content;
-        
-        
-      
-    }   
-   
-
+        padding: 15px 10px 10px 10px;
+    }
     .club_name {
-        
         font-size: 4.5vw;
     }
-
-
-
     .drop-cont {
-        Padding:60px 95px;
-          top:55px;
-          Float:Left;
-          Position:Absolute;
-          Right:10px;
-          display: none;
-          Background-color:grey;
-          Font-size:25px;
-          Color:#000000;
-          Z-index:1;
-          box-shadow:30px 30px 35px 0px rgba(0,0,0,100.0);
-          background-repeat: no-repeat;
-          background-size: cover;
-          border-radius:26px;
-          width: 100px;
+        Padding: 60px 20px 0px 0;
+        top: 55px;
+        Float: Left;
+        Position: Absolute;
+        Right: 10px;
+        display: none;
+        Background-color: grey;
+        Font-size: 20px;
+        Color: #000000;
+        Z-index: 1;
+        box-shadow: 30px 30px 35px 0px rgba(0, 0, 0, 100.0);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 15px;
+        width: 200px;
+        height: 150px;
     }
-
-    .dropdown:hover .drop-cont{
+    .dropdown:hover .drop-cont {
         display: block;
     }
+}
+
+@media (max-width:1060px) {
+    .nav_item {
+        display: none;
+    }
+}
 
 
- }
+/* =================================== media query for mobile ================================ */
+
+@media (max-width:980px) {
+    .nav_item {
+        font-size: 1.5vw;
+        padding: 15px 0px 1px 3px;
+    }
+    .club_name {
+        font-size: 3.5vw;
+    }
+    /* ===============welcome page ===============*/
+    .welcome_page h1 {
+        font-size: 6vw;
+    }
+    .welcome_page .welcome_button {
+        width: 20vw;
+        height: 4vw;
+        margin-top: 50px;
+        font-size: 2vw;
+    }
+    /*=============== blog section ===============*/
+    .section_box {
+        margin: 15px 0 10px 0;
+        width: 90%;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .section_name {
+        font-size: 4vw;
+    }
+    .blog_section .section_box .blog_button {
+        width: 180px;
+        font-size: 2vw;
+        height: 43px;
+    }
+    .blog_img {
+        height: 250px;
+        width: 350px;
+        margin: 5px 10px 5px 5px;
+    }
+    .blog_topic {
+        font-size: 3.3vw;
+    }
+    .blog_p {
+        font-size: 2vw;
+    }
+    /*=============== footer ===============*/
+    .info p {
+        font-size: 1.9vw;
+    }
+    .footer_icon i {
+        font-size: 3.5vw;
+    }
+    .thankYou {
+        font-size: 2.5vw;
+    }
+}
+
+
+/* =================media query for normal devices ================== */
+
+@media (max-width: 775px) {
+    .nav_item {
+        font-size: 1.5vw;
+        padding: 15px 0px 10px 3px;
+    }
+    .club_name {
+        font-size: 3.7vw;
+    }
+    /* ===============welcome page ===============*/
+    .welcome_page {
+        height: rem;
+    }
+    .welcome_page h1 {
+        font-size: 7vw;
+    }
+    .welcome_page .welcome_button {
+        width: 28vw;
+        height: 6vw;
+        margin-top: 50px;
+        font-size: 3vw;
+    }
+    /*=============== blog section ===============*/
+    .section_box {
+        width: 90%;
+        height: 480px;
+    }
+    .section_name {
+        font-size: 4.9vw;
+    }
+    .blog_section .section_box .blog_button {
+        width: 200px;
+        font-size: 2.7vw;
+        height: 45px;
+    }
+    .blog_img {
+        height: 200px;
+        width: 360px;
+    }
+    .blog_topic {
+        font-size: 4.3vw;
+        margin: 20px 0 3px 0;
+    }
+    .blog_p {
+        font-size: 2.2vw;
+    }
+    /* ==============feedback form ============== */
+    .form_name {
+        font-size: 6vw;
+    }
+    input {
+        width: 320px;
+        height: 33px;
+        font-size: 16px;
+    }
+    textarea {
+        font-size: 17px;
+        width: 320px;
+    }
+    input[type=submit] {
+        width: 335px;
+        height: 40px;
+        font-size: 2.5vw;
+    }
+    /* =============== footer =============== */
+    .info p {
+        font-size: 2.3vw;
+    }
+    .footer_icon i {
+        font-size: 3.8vw;
+    }
+    .thankYou {
+        font-size: 2.9vw;
+    }
+}
+
+
+/* ================mobile view media query=============== */
+
+@media (max-width:500px) {
+    .bar {
+        Height: 3px;
+        Width: 35px;
+        Margin: 5px 8px;
+    }
+    .nav_bar .nav_list {
+        margin: 0 4% 0 16%;
+    }
+    .nav_item {
+        font-size: 1.5vw;
+        padding: 15px 0px 10px 3px;
+    }
+    .club_name {
+        font-size: 5.1vw;
+    }
+    /* ===============welcome page ===============*/
+    .welcome_page {
+        height: 28rem;
+    }
+    .welcome_page h1 {
+        font-size: 8.5vw;
+    }
+    .welcome_page .welcome_button {
+        width: 40vw;
+        height: 7vw;
+        font-size: 3.9vw;
+    }
+    /*=============== blog section ===============*/
+    .section_box {
+        width: 90%;
+        height: 480px;
+    }
+    .section_name {
+        font-size: 7.5vw;
+    }
+    .blog_section .section_box .blog_button {
+        width: 200px;
+        font-size: 3.7vw;
+        height: 40px;
+    }
+    .blog_img {
+        height: 200px;
+        width: 300px;
+    }
+    .blog_topic {
+        font-size: 7.3vw;
+    }
+    .blog_p {
+        font-size: 3.2vw;
+    }
+    /* ==============feedback form ============== */
+    .form_name {
+        font-size: 9vw;
+    }
+    input {
+        width: 280px;
+        height: 33px;
+        font-size: 15px;
+    }
+    textarea {
+        font-size: 16px;
+        width: 280px;
+    }
+    input[type=submit] {
+        width: 300px;
+        height: 40px;
+        font-size: 4vw;
+    }
+    /* =============== footer =============== */
+    .info p {
+        font-size: 3.5vw;
+    }
+    .footer_icon i {
+        font-size: 5.7vw;
+    }
+    .thankYou {
+        font-size: 4vw;
+    }
+}
 
 
