@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/manasi.css">
     <script src="https://kit.fontawesome.com/f11795d792.js" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;700&family=Open+Sans:wght@300&display=swap');
@@ -17,6 +17,29 @@
 </head>
 
 <body>
+
+    <div id="preloader">
+        <div class="moon">
+            <div class="creater c1"></div>
+            <div class="creater c2"></div>
+            <div class="creater c3"></div>
+            <div class="creater c4"></div>
+            <div class="creater c5"></div>
+            <div class="shadow"></div>
+            <div class="eye e1"></div>
+            <div class="eye er"></div>
+            <div class="mouth"></div>
+            <div class="blush b1"></div>
+            <div class="blush b2"></div>
+
+
+        </div>
+        <div class="orbit">
+            <div class="rocket">
+                <div class="window"></div>
+            </div>
+        </div>
+    </div>
 
     <!-------------------------- Navbar -------------------------->
     <div class="nav_bar">
@@ -225,6 +248,14 @@
         });
     </script>
 
+
+<script>
+    var loader = document.getElementById("preloader");
+
+    window.addEventListener("load", function(){
+        loader.style.display = "none";
+    })
+</script>
 
 </body>
 
