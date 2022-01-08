@@ -963,18 +963,24 @@ footer {
     }
     /* =============== welcome page ===============*/
     .welcome_img img {
-        top: 0;
         width: 200px;
         height: 200px;
-        margin-top: 10px;
-        left: 0;
-        margin-left: 0;
     }
+
+    .welcome_img  {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        right: 0px;
+        top: 80px;
+    }
+
     .welcome_page {
         height: 100vh;
     }
      .welcome_page .welcome_content{
-         margin-top: 0px;
+      position: absolute;
+      top: 400px;
      }
     .welcome_page .welcome_content h1 {
         font-size: 7vw;
