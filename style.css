@@ -980,7 +980,7 @@ footer {
     }
      .welcome_page .welcome_content{
       position: absolute;
-      top: 400px;
+      top: 90px;
      }
     .welcome_page .welcome_content h1 {
         font-size: 7vw;
@@ -1096,6 +1096,7 @@ footer {
     .welcome_page .welcome_content {
         margin: 1px 50% 0;
         width: 90%;
+        top: 300px;
     }
     .welcome_img img {
         top: 0;
