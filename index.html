@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="manasi.css">
     <script src="https://kit.fontawesome.com/f11795d792.js" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;700&family=Open+Sans:wght@300&display=swap');
     </style>
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>Astronomy Club</title>
@@ -53,25 +56,8 @@
 
 
                 <div class="dropdown">
-
-
-
-                    <div class="bar_container">
-                        <div class="bar">
-
-                        </div>
-                        <div class="bar">
-
-                        </div>
-                        <div class="bar">
-
-                        </div>
-                    </div>
-
-
-
-
-                    <div class="drop-cont">
+                    <i class='bx bx-menu' id="btn"></i>
+  <div class="drop-cont">
 
                         <li class="nav-1">
                             <a href="#Welcome" class="nav_link">
@@ -135,16 +121,32 @@
     <!-------------------------- welcome page -------------------------->
 
     <div id="Welcome" class="welcome_page">
-        <h1 data-aos="fade-in" class="welcome_name">Welcome to Astronomy Club</h1>
-        <button data-aos="fade-in" class="welcome_button">Join Now</button>
+        <div class="welcome_img">
+            <img src="https://static.vecteezy.com/system/resources/previews/000/181/227/original/vector-cute-astronaut.jpg" alt="">
+           
+        </div>
+        <div class="welcome_content">
+            <h1 data-aos="fade-in" class="welcome_name">Welcome to Astronomy Club</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis optio eaque quis pariatur recusandae blanditiis ducimus animi. Doloribus dolores sed magnam facilis quidem ad corporis enim officia!</p>
+            <button data-aos="fade-in" class="welcome_button">Join Now</button>
+        </div>
+       
+
+        <div class="custom-shape-divider-bottom-1641552017">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" class="shape-fill"></path>
+            </svg>
+        </div>
     </div>
 
-   
+
 
 
 
 
     <!--------------------------  blog section ------------------------ -->
+
+
 
     <div>
         <h2 data-aos="fade-in" class="section_name">Blog section</h2>
@@ -152,14 +154,14 @@
 
     <div id="blogSection" class="blog_section">
 
+
+
+
+
         <div class="section_box" data-aos="fade-in">
-            <img class="blog_img"
-                src="https://th.bing.com/th/id/OIP.SG5U9c2sZC90FrsTU-fpJwHaFX?w=272&h=197&c=7&r=0&o=5&dpr=1.13&pid=1.7"
-                alt="">
+            <img class="blog_img" src="https://th.bing.com/th/id/OIP.SG5U9c2sZC90FrsTU-fpJwHaFX?w=272&h=197&c=7&r=0&o=5&dpr=1.13&pid=1.7" alt="">
             <h3 class="blog_topic">Solar system</h3>
-            <p class="blog_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deleniti laborum quisquam hic
-                unde sint doloremque voluptates veniam, similique incidunt!orem ipsum dolor sit amet consectetur
-                adipisicing elit.
+            <p class="blog_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deleniti laborum quisquam hic unde sint doloremque voluptates veniam, similique incidunt!orem ipsum dolor sit amet consectetur adipisicing elit.
 
             </p>
             <div><button class="blog_button">Read more</button></div>
@@ -167,66 +169,58 @@
 
         <div class="section_box" data-aos="fade-in">
 
-            <img class="blog_img"
-                src="https://th.bing.com/th/id/OIP.xlKuFITku9vWX23srDdx2gHaEK?w=287&h=180&c=7&r=0&o=5&dpr=1.13&pid=1.7"
-                alt="">
+            <img class="blog_img" src="https://th.bing.com/th/id/OIP.xlKuFITku9vWX23srDdx2gHaEK?w=287&h=180&c=7&r=0&o=5&dpr=1.13&pid=1.7" alt="">
             <h3 class="blog_topic">Moon</h3>
 
-            <p class="blog_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deleniti laborum quisquam hic
-                unde sint doloremque voluptates veniam, similique incidunt!orem ipsum dolor sit amet consectetur
-                adipisicing elit.
+            <p class="blog_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deleniti laborum quisquam hic unde sint doloremque voluptates veniam, similique incidunt!orem ipsum dolor sit amet consectetur adipisicing elit.
 
             </p>
             <button class="blog_button">Read more</button>
         </div>
 
         <div class="section_box" data-aos="fade-in">
-            <img class="blog_img"
-                src="https://th.bing.com/th/id/OIP.8PuKh5rD5kPYBGI7EjAykAHaFb?w=253&h=186&c=7&r=0&o=5&dpr=1.13&pid=1.7"
-                alt="">
+            <img class="blog_img" src="https://th.bing.com/th/id/OIP.8PuKh5rD5kPYBGI7EjAykAHaFb?w=253&h=186&c=7&r=0&o=5&dpr=1.13&pid=1.7" alt="">
             <h3 class="blog_topic">Galaxy</h3>
-            <p class="blog_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deleniti laborum quisquam hic
-                unde sint doloremque voluptates veniam, similique incidunt!orem ipsum dolor sit amet consectetur
-                adipisicing elit.
+            <p class="blog_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deleniti laborum quisquam hic unde sint doloremque voluptates veniam, similique incidunt!orem ipsum dolor sit amet consectetur adipisicing elit.
 
             </p>
             <button class="blog_button">Read more</button>
         </div>
 
         <div class="section_box" data-aos="fade-in">
-            <img class="blog_img"
-                src="https://th.bing.com/th/id/OIP.ijM3-prK9RLxaoYT7eUbaQHaE8?w=230&h=180&c=7&r=0&o=5&dpr=1.13&pid=1.7"
-                alt="">
+            <img class="blog_img" src="https://th.bing.com/th/id/OIP.ijM3-prK9RLxaoYT7eUbaQHaE8?w=230&h=180&c=7&r=0&o=5&dpr=1.13&pid=1.7" alt="">
             <h3 class="blog_topic">sun</h3>
-            <p class="blog_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deleniti laborum quisquam hic
-                unde sint doloremque voluptates veniam, similique incidunt! Lorem ipsum dolor sit amet consectetur
-                adipisicing elit.
+            <p class="blog_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deleniti laborum quisquam hic unde sint doloremque voluptates veniam, similique incidunt! Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
             </p>
             <button class="blog_button">Read more</button>
         </div>
+
     </div>
 
 
 
     <!------------------------- feedackform  ------------------------->
+    <div class="form_content">
 
-    <div id="form">
-        <h2 class="form_name" data-aos="fade-in">Feedback form</h2>
+        <div id="form">
+            <h2 class="form_name" data-aos="fade-in">Feedback form</h2>
 
-        <form class="form" data-aos="fade-in" action="https://formsubmit.co/sangitashelke507@gmail.com" method="POST">
-            <fieldset>
-                <input type="text" name="firstName" placeholder="FirstName" required>
-                <input type="text" name="lastName" placeholder="LastName" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <!-- <input type="hidden" name="_next" value="https://Blog-site_Astro_Club-master/Blog-site_Astro_Club-master/css/thankyou.html"> -->
-                <input type="hidden" name="_subject" value="New submission!">
-                <input type="hidden" name="_captcha" value="false">
-                <textarea name="comment" cols="33" rows="10" placeholder="Comment"></textarea>
-                <input type="submit" value="Submit">
-            </fieldset>
+            <form class="form" data-aos="fade-in" action="https://formsubmit.co/sangitashelke507@gmail.com" method="POST">
+                <fieldset>
+                    <input type="text" name="firstName" placeholder="FirstName" required>
+                    <input type="text" name="lastName" placeholder="LastName" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <!-- <input type="hidden" name="_next" value="https://Blog-site_Astro_Club-master/Blog-site_Astro_Club-master/css/thankyou.html"> -->
+                    <input type="hidden" name="_subject" value="New submission!">
+                    <input type="hidden" name="_captcha" value="false">
+                    <textarea name="comment" cols="33" rows="10" placeholder="Comment"></textarea>
+                    <input type="submit" value="Submit">
+                </fieldset>
 
-        </form>
+            </form>
+        </div>
+        <img class="form_img" src="form_img2.jpeg" alt="">
     </div>
 
 
@@ -236,7 +230,7 @@
             <div class="info">
                 <p>GCOEN, Astronomy Club</p>
                 <p>gcoenastro@gmail.com</p>
-                <p> Contact No. 12345667890</p>
+                
             </div>
             <div class="footer_icon">
                 <a href="#" target="_blank">
@@ -255,8 +249,8 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
-            offset: -500,
-            duration: 800,
+            offset: 180,
+            duration: 1000,
         });
     </script>
 
@@ -264,7 +258,7 @@
     <script>
         var loader = document.getElementById("preloader_body");
 
-        window.addEventListener("load", function () {
+        window.addEventListener("load", function() {
             loader.style.display = "none";
         })
     </script>
